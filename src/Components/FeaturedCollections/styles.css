@@ -1,0 +1,71 @@
+.FeaturedCollections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.FeaturedCollections .heading h1{
+    font-size: 32px;
+    color: #111;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+
+.FeaturedCollections .collections{
+    width: 80%;
+    height: 700px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.FeaturedCollections .collections .collection1{
+    background: url(../../Assets/tshirt\ collection.png) center no-repeat;
+    background-size: cover;
+    width: 45%;
+    height: 100%;
+}
+
+.FeaturedCollections .collections .collection2{
+    background: url(../../Assets/pants\ collection.png) center no-repeat;
+    background-size: cover;
+    width: 45%;
+    height: 100%;
+}
+
+.FeaturedCollections .collections .collection1 .content,
+.FeaturedCollections .collections .collection2 .content{
+    position: relative;
+    top: 70%;
+    left: 20px;
+}
+
+.FeaturedCollections .collections .collection1 .content .heading,
+.FeaturedCollections .collections .collection2 .content .heading{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.FeaturedCollections .collections .collection1 .content a,
+.FeaturedCollections .collections .collection2 .content a{
+    margin: 20px 0px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    width: 170px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.2s ease;
+    border: 2px solid #FA8164;
+
+}
