@@ -27,6 +27,7 @@
     background-size: cover;
     width: 42%;
     height: 100%;
+    transition: 0.25s ease;
 }
 
 .FeaturedCollections .collections .collection2{
@@ -34,6 +35,7 @@
     background-size: cover;
     width: 42%;
     height: 100%;
+    transition: 0.25s ease;
 }
 
 .FeaturedCollections .collections .collection1 .content,
@@ -41,6 +43,7 @@
     position: relative;
     top: 70%;
     left: 20px;
+    width: max-content;
 }
 
 .FeaturedCollections .collections .collection1 .content .heading,
@@ -78,28 +81,36 @@
 
 @media screen and (max-width: 900px) {
     
+    .FeaturedCollections .collections{
+        height: max-content;
+    }
+
     .FeaturedCollections .collections .collection1{
         width: 60%;
+        height: 500px;
         margin: 10px 0px;
     }
     .FeaturedCollections .collections .collection2{
         width: 60%;
+        height: 500px;
         margin: 10px 0px;
-
     }
 }
 
 
 @media screen and (max-width: 600px){
     .FeaturedCollections .collections{
-        height: 450px;
+        height: max-content;
     }
+
     .FeaturedCollections .collections .collection1{
         width: 95%;
+        height: 400px;
         margin: 10px 0px;
     }
     .FeaturedCollections .collections .collection2{
         width: 95%;
+        height: 400px;
         margin: 10px 0px;
     }
     .FeaturedCollections .collections .collection1 .content a,

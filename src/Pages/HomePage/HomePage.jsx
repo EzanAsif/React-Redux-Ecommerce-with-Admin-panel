@@ -2,6 +2,7 @@ import SiteNav from '../../Components/SiteNav/SiteNav';
 import AnnounceBar from '../../Components/AnnouncementBar/AnnounceBar'
 import HeroSection from '../../Components/HeroSection/HeroSection'
 import FeaturedCollections from '../../Components/FeaturedCollections/FeaturedCollections'
+import BestSellers from '../../Components/Best Sellers/BestSellers'
 import React from 'react'
 
 const HomePage = () => {
@@ -11,6 +12,7 @@ const HomePage = () => {
             <SiteNav />
             <HeroSection/>
             <FeaturedCollections/>
+            <BestSellers/>
         </div>
     )
 }
