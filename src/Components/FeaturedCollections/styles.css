@@ -15,23 +15,24 @@
 
 .FeaturedCollections .collections{
     width: 80%;
-    height: 700px;
+    height: 600px;
     margin: 30px auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .FeaturedCollections .collections .collection1{
     background: url(../../Assets/tshirt\ collection.png) center no-repeat;
     background-size: cover;
-    width: 45%;
+    width: 42%;
     height: 100%;
 }
 
 .FeaturedCollections .collections .collection2{
     background: url(../../Assets/pants\ collection.png) center no-repeat;
     background-size: cover;
-    width: 45%;
+    width: 42%;
     height: 100%;
 }
 
@@ -51,6 +52,10 @@
     text-transform: uppercase;
 }
 
+.FeaturedCollections .heading h1{
+    text-align: center;
+}
+
 .FeaturedCollections .collections .collection1 .content a,
 .FeaturedCollections .collections .collection2 .content a{
     margin: 20px 0px 0px;
@@ -68,4 +73,38 @@
     transition: 0.2s ease;
     border: 2px solid #FA8164;
 
+}
+
+
+@media screen and (max-width: 900px) {
+    
+    .FeaturedCollections .collections .collection1{
+        width: 60%;
+        margin: 10px 0px;
+    }
+    .FeaturedCollections .collections .collection2{
+        width: 60%;
+        margin: 10px 0px;
+
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .FeaturedCollections .collections{
+        height: 450px;
+    }
+    .FeaturedCollections .collections .collection1{
+        width: 95%;
+        margin: 10px 0px;
+    }
+    .FeaturedCollections .collections .collection2{
+        width: 95%;
+        margin: 10px 0px;
+    }
+    .FeaturedCollections .collections .collection1 .content a,
+    .FeaturedCollections .collections .collection2 .content a{
+        width: 120px;
+        height: 35px;
+    }
 }
