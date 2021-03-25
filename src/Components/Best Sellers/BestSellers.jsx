@@ -13,11 +13,11 @@ const BestSellers = () => {
             </div>
             <div className="cards">
                 <IndivProdCard thumb = {prod1} category = "T-SHIRT" title = "Crew Neck" price = {49.99} />
-                <IndivProdCard thumb = {prod2} category = "T-SHIRT" title = "Crew Neck" price = {49.99} />
-                <IndivProdCard thumb = {prod3} category = "T-SHIRT" title = "Crew Neck" price = {49.99} />
                 <IndivProdCard thumb = {prod1} category = "T-SHIRT" title = "Crew Neck" price = {49.99} />
-                <IndivProdCard thumb = {prod2} category = "T-SHIRT" title = "Crew Neck" price = {49.99} />
-                <IndivProdCard thumb = {prod3} category = "T-SHIRT" title = "Crew Neck" price = {49.99} />
+                <IndivProdCard thumb = {prod1} category = "T-SHIRT" title = "Crew Neck" price = {49.99} />
+                <IndivProdCard thumb = {prod1} category = "T-SHIRT" title = "Crew Neck" price = {49.99} />
+                <IndivProdCard thumb = {prod1} category = "T-SHIRT" title = "Crew Neck" price = {49.99} />
+                <IndivProdCard thumb = {prod1} category = "T-SHIRT" title = "Crew Neck" price = {49.99} />
             </div>
         </div>
     )

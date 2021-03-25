@@ -6,7 +6,7 @@
 }
 
 .BestSellers .heading{
-    margin: 10px 0px 50px 0px;
+    margin: 10px 0px 30px 0px;
 }
 
 .BestSellers .heading h1{
@@ -25,7 +25,7 @@
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 920px) {
 
     .BestSellers{
         margin: 0px 0px;
