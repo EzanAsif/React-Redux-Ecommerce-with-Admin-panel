@@ -1,11 +1,18 @@
 import './App.css';
 import HomePage from './Pages/HomePage/HomePage'
+import IndivProdPage from './Pages/IndivProdPage/IndivProdPage'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+
 
 function App() {
   return (
-    <div className="App">
-        <HomePage />
-    </div>
+      <Router>
+        <Switch>
+          <Route exact path = '/' component = {HomePage} />
+          <Route exact path = '/prod' component = {IndivProdPage} />
+        </Switch>
+      </Router>
+    
   );
 }
 

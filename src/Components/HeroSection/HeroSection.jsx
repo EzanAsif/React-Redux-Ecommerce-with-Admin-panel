@@ -5,6 +5,9 @@ import homepagebanner3 from '../../Assets/homepagebanner3.jpg';
 
 import './styles.css'
 
+import { Link } from "react-router-dom";
+
+
 const HeroSection = () => {
     return (
         <div className = "HeroSection">
@@ -24,7 +27,7 @@ const HeroSection = () => {
                 <div className="hero-section-heading">
                     <h1>spring 2020</h1>
                     <h4>upto 50% off</h4>
-                    <a href = '/'>SHOP NOW</a>
+                    <Link to = '/prod'>SHOP NOW</Link>
                 </div>
         </div>
     )
