@@ -1,9 +1,12 @@
 import React from 'react'
 import './styles.css'
 
+import {Link} from 'react-router-dom'
+
 const IndivProdCard = ({thumb, category, title, price}) => {
+
     return (
-        <a  href = "/" className = "indivCard">
+        <Link  to = {`/product/${title}`} className = "indivCard">
             <div className="thumb">
                     <img src={thumb} alt={title}/>
             </div>
@@ -16,7 +19,7 @@ const IndivProdCard = ({thumb, category, title, price}) => {
             <div className="price">
                 ${price}
             </div>
-        </a>
+        </Link>
     )
 }
 

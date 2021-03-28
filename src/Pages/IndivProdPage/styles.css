@@ -49,6 +49,17 @@
     margin: 10px 0px 20px 0px;
 }
 
+.prodDetails .details .size .sizePickerDiv select{
+    border: 1.75px solid rgb(80, 80, 80);
+    background-color: rgb(80, 80, 80);
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.prodDetails .details .size .sizePickerDiv select:focus{
+    outline: none;
+}
+
 .prodDetails .details .buttons{
     width: 80%;
     display: flex;
@@ -91,6 +102,11 @@
 
 #splide01{
     margin: 1px auto;
+}
+
+.prodDetails .details .titleAndPrice .price h2{
+    font-family: 'Quicksand', sans-serif ;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 1200px){

@@ -27,7 +27,7 @@ const HeroSection = () => {
                 <div className="hero-section-heading">
                     <h1>spring 2020</h1>
                     <h4>upto 50% off</h4>
-                    <Link to = '/prod'>SHOP NOW</Link>
+                    <Link to = '/product/'>SHOP NOW</Link>
                 </div>
         </div>
     )

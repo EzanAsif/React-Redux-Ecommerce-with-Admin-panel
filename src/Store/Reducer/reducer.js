@@ -1,16 +1,17 @@
-let product = [
+let product = {
     // array of objects each index of array will be a different product
-    {   
+    "Crew Curve-Hem" : {   
         id : 1,
         title : "Crew Curve-Hem",
         price : 48,
         description : "Our best selling short sleeve style, the Crew Curve-Hem is as dependable as it gets.",
-        pics : ['../../Assets/1st_prod_1.jpg', '../../Assets/1st_prod_2.jpg', '../../Assets/1st_prod_3.jpg'],
-        collection : 't-shirts',
+        pics : ['https://cdn.shopify.com/s/files/1/1368/3463/products/VINTAGECREWCURVE1.jpg?v=1611962685', 'https://cdn.shopify.com/s/files/1/1368/3463/products/VINTAGECREWCURVE4.jpg?v=1611962685', 'https://cdn.shopify.com/s/files/1/1368/3463/products/VINTAGECREWCURVE4.jpg?v=1611962685'],
+        category : 'T-SHIRTS',
         stockAvail : 10,
-        sizes : ['small', 'medium', 'large'],
+        sizes : ['Small', 'Medium', 'Large'],
+        thumb : 'https://cdn.shopify.com/s/files/1/1368/3463/products/VINTAGECREWCURVE1.jpg?v=1611962685',
     },
-];
+};
 
 let cart = [
     
@@ -35,3 +36,10 @@ let individualOrder = {
 let orders = [
     // array of individual orders
 ];
+
+export function prodReducer(state = product, action){
+    switch (action.type) {  
+        default:
+            return state;
+    }
+}
