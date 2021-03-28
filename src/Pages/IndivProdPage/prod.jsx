@@ -1,4 +1,6 @@
-import React from "react";
+import {React, useState} from "react";
+import {useSelector, useDispatch} from 'react-redux';
+
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import { useParams, Link } from "react-router-dom";
 
@@ -9,6 +11,35 @@ import prod2 from "../../Assets/1st_prod_2.jpg";
 import prod3 from "../../Assets/1st_prod_3.jpg";
 
 const Prod = ({title, price, desc, images, sizes, bestSeller}) => {
+
+  const cartData  = useSelector(reducer => reducer.cart)
+  console.log(cartData)
+
+  const [qty, setQty] = useState( )
+  const [Usize, setUsize] = useState('Small')
+
+  const dispatch = useDispatch();
+
+  const addToCart = () => {
+    let prod = {
+      name : title,
+      amount : price,
+      Uqty : parseInt(qty),
+      size : Usize,
+      total : price * qty,
+    }
+
+    console.log(prod);
+
+    dispatch(
+      {
+        type : "ADD_TO_CART",
+        payload : prod
+      }
+    )
+    
+  }
+
   return (
     <div className="prodDetails">
       <div className="details">
@@ -29,7 +60,7 @@ const Prod = ({title, price, desc, images, sizes, bestSeller}) => {
         <div className="size">
           <label htmlFor="sizePicker">Size:</label>
           <div className="sizePickerDiv">
-            <select name="sizePicker" id="sizePicker">
+            <select onChange = {(e) => setUsize(e.target.value)} name="sizePicker" id="sizePicker">
                 {sizes.map((size, key) => {
                     return(
                         <option key = {key} value={size}>{size}</option>
@@ -38,8 +69,9 @@ const Prod = ({title, price, desc, images, sizes, bestSeller}) => {
             </select>
           </div>
         </div>
+        <input onChange = {(e) => {e.preventDefault(); setQty(e.target.value)}} type="number" name="qty" className = "qty" placeholder  = "Quantity" min = {1} max = {10}/>
         <div className="buttons">
-          <Link to="/">Add to cart</Link>
+          <Link to={`/product/${title}`} onClick = {addToCart}>Add to cart</Link>
           <Link to="/">Buy Now</Link>
         </div>
       </div>

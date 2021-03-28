@@ -10,29 +10,28 @@ import "./styles.css";
 
 const IndivProdPage = () => {
   let { id } = useParams();
-  console.log(id);
+  // console.log(id);
 
   const [product, setProduct] = useState();
 
   const data = useSelector((reducer) => reducer.products);
-  console.log(data);
+  // console.log(data);
 
   const prods = Object.keys(data);
-  console.log(prods);
+  // console.log(prods);
+
+  let {title, price, description, pics, sizes, bestSeller} = data[id];
 
   return (
     <div className="productPage">
       <AnnounceBar text="upto 50% off on all items" />
       <SiteNav />
 
-      <Prod
-        title={data[id].title}
-        price={data[id].price}
-        desc={data[id].description}
-        images={data[id].pics}
-        sizes={data[id].sizes}
-        bestSeller
-      />
+      {
+        bestSeller ? <Prod title={title} price={price} desc={description} images={pics} sizes={sizes} bestSeller /> : <Prod title={title} price={price} desc={description} images={pics} sizes={sizes} />
+        
+      }
+
     </div>
   );
 };

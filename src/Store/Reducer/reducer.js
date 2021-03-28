@@ -1,4 +1,4 @@
-let product = {
+let products = {
     // array of objects each index of array will be a different product
     "Crew Curve-Hem" : {   
         id : 1,
@@ -10,6 +10,7 @@ let product = {
         stockAvail : 10,
         sizes : ['Small', 'Medium', 'Large'],
         thumb : 'https://cdn.shopify.com/s/files/1/1368/3463/products/VINTAGECREWCURVE1.jpg?v=1611962685',
+        bestSeller : true,
     },
     "New" : {   
         id : 1,
@@ -21,6 +22,7 @@ let product = {
         stockAvail : 10,
         sizes : ['Small', 'Medium', 'Large'],
         thumb : 'https://cdn.shopify.com/s/files/1/1368/3463/products/VINTAGECREWCURVE1.jpg?v=1611962685',
+        bestSeller : false,
     },
 };
 
@@ -48,8 +50,22 @@ let orders = [
     // array of individual orders
 ];
 
-export function prodReducer(state = product, action){
+export function prodReducer(state = products, action){
     switch (action.type) {  
+        default:
+            return state;
+    }
+}
+
+export function cartReducer(state = cart, action){
+    switch (action.type) {  
+        case 'ADD_TO_CART' : 
+            return{
+                ...state,
+                state : [...state, state.push(action.payload)],
+            }
+
+        
         default:
             return state;
     }
