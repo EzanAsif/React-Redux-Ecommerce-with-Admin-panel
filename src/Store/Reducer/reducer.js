@@ -11,6 +11,17 @@ let product = {
         sizes : ['Small', 'Medium', 'Large'],
         thumb : 'https://cdn.shopify.com/s/files/1/1368/3463/products/VINTAGECREWCURVE1.jpg?v=1611962685',
     },
+    "New" : {   
+        id : 1,
+        title : "New",
+        price : 48,
+        description : "Our best selling short sleeve style, the Crew Curve-Hem is as dependable as it gets.",
+        pics : ['https://cdn.shopify.com/s/files/1/1368/3463/products/VINTAGECREWCURVE1.jpg?v=1611962685', 'https://cdn.shopify.com/s/files/1/1368/3463/products/VINTAGECREWCURVE4.jpg?v=1611962685', 'https://cdn.shopify.com/s/files/1/1368/3463/products/VINTAGECREWCURVE4.jpg?v=1611962685'],
+        category : 'T-SHIRTS',
+        stockAvail : 10,
+        sizes : ['Small', 'Medium', 'Large'],
+        thumb : 'https://cdn.shopify.com/s/files/1/1368/3463/products/VINTAGECREWCURVE1.jpg?v=1611962685',
+    },
 };
 
 let cart = [
