@@ -15,7 +15,7 @@ const IndivProdPage = () => {
   const [product, setProduct] = useState();
 
   const data = useSelector((reducer) => reducer.products);
-  // console.log(data);
+  console.log(data);
 
   const prods = Object.keys(data);
   // console.log(prods);

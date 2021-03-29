@@ -44,9 +44,9 @@ const SiteNav = () => {
           </div>
           <ul className = {Click ? 'nav-menu active' : 'nav-menu'}>
               <li className = 'nav-item'>
-                <a href="/" className = 'nav-links' onClick = {closeMobileMenu}>
+                <Link to="/" className = 'nav-links' onClick = {closeMobileMenu}>
                   Home
-                </a>
+                </Link>
               </li>
               <li className = 'nav-item'>
                 <a href="/" className = 'nav-links sale' onClick = {closeMobileMenu}>
@@ -66,7 +66,7 @@ const SiteNav = () => {
           </ul>
               <div className="nav-icons">
                 <a className = "admin-icon"><PersonIcon/></a>
-                <a className = "cart-icon"><ShoppingCartIcon/></a>
+                <Link to = '/cart' className = "cart-icon"><ShoppingCartIcon/></Link>
               </div>
         </div>
       </nav>

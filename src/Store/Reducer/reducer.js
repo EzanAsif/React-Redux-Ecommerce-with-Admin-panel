@@ -60,10 +60,10 @@ export function prodReducer(state = products, action){
 export function cartReducer(state = cart, action){
     switch (action.type) {  
         case 'ADD_TO_CART' : 
-            return{
+            return[
                 ...state,
-                state : [...state, state.push(action.payload)],
-            }
+                action.payload,
+            ]
 
         
         default:
