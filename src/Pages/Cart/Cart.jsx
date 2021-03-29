@@ -37,7 +37,9 @@ const Cart = () => {
                 )
                         // <h6>TOTAL : {totalAmount} </h6>
                 : 
+
                 <NoProd/>
+                
             }
             <Link to = '/'>Continue Shopping</Link>
 
