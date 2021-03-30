@@ -8,13 +8,21 @@ import {Link} from 'react-router-dom'
 
 import './styles.css'
 
+
+
 const Cart = () => {
 
-    const [totalAmount, setTotalAmount] = useState(0)
+    let [totalAmount, setTotalAmount] = useState(0)
+
+
 
     const cartData = useSelector(reducer => reducer.cart)
     console.log(cartData)
 
+
+
+
+    
 
     return (
         <>
@@ -26,25 +34,29 @@ const Cart = () => {
 
             {
                 cartData.length 
-                ?
 
+                ?
                 cartData.map((cart, key) => {
                     console.log("CART" + cart);
                     return(
-                            <ProdCart name = {cart.name} price = {cart.amount} qty = {cart.Uqty} size = {cart.size} total = {cart.total} /> 
+                            <ProdCart key = {key} thumb = {cart.thumb} name = {cart.name} price = {cart.amount} qty = {cart.Uqty} size = {cart.size} total = {cart.total} /> 
                         )
+
                     }
                 )
-                        // <h6>TOTAL : {totalAmount} </h6>
-                : 
 
+                : 
                 <NoProd/>
                 
             }
-            <Link to = '/'>Continue Shopping</Link>
 
+            {/* <h6>Total : {totalAmount}</h6> */}
             
         </div>
+        <div className="continueShopping">
+            <Link to = '/'>Continue Shopping</Link>
+        </div>
+        
         </>
     )
 }

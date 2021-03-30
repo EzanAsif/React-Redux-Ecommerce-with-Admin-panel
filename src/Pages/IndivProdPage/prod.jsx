@@ -22,6 +22,7 @@ const Prod = ({title, price, desc, images, sizes, bestSeller}) => {
 
   const addToCart = () => {
     let prod = {
+      thumb : images[0],
       name : title,
       amount : price,
       Uqty : parseInt(qty),

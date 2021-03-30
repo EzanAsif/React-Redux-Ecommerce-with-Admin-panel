@@ -4,7 +4,8 @@ import {Link} from 'react-router-dom'
 const NoProd = () => {
     return (
         <div className="NoProd">
-            <h1>Your cart is empty</h1>
+            <h3>Your cart is currently empty</h3>
+            {/* <Link to = '/'>Browse All</Link> */}
         </div>
     )
 }

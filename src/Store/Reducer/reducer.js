@@ -37,6 +37,7 @@ let cart = [
 
 ];    
 
+
 let individualOrder = {
 
     // orderNo : int,
@@ -70,3 +71,4 @@ export function cartReducer(state = cart, action){
             return state;
     }
 }
+
