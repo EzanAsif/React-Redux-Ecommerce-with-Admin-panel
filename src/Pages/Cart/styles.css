@@ -102,4 +102,10 @@
     bottom: 10%;
     left: 50%; */
 }
-    
+
+.cart .total{
+    padding: 14px 28px;
+    width: max-content;
+    margin: 10px auto;
+    font-size: 20px;
+}
