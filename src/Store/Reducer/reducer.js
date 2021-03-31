@@ -1,5 +1,4 @@
 let products = {
-    // array of objects each index of array will be a different product
     "Crew Curve-Hem" : {   
         id : 1,
         title : "Crew Curve-Hem",
@@ -26,16 +25,7 @@ let products = {
     },
 };
 
-let cart = [
-    
-    // will also be an array of objects and each index will be a different product 
-    // {
-    //     product : // here will be the product,
-    //     qty : int,
-    //     total : int * product.price
-    // }
-
-];    
+let cart = [];    
 
 
 let individualOrder = {
