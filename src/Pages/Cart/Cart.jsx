@@ -3,7 +3,7 @@ import SiteNav from '../../Components/SiteNav/SiteNav';
 import AnnounceBar from '../../Components/AnnouncementBar/AnnounceBar'
 import NoProd from './NoProd'
 import ProdCart from './ProdCart'
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import {Link} from 'react-router-dom'
 
 import './styles.css'
@@ -16,6 +16,11 @@ const Cart = () => {
 
     const cartData = useSelector(reducer => reducer.cart)
     console.log(cartData)
+
+    const PlaceOrder = useSelector(reducer => reducer.indOrder)
+
+    const dispatch = useDispatch()
+
   
 
     return (
@@ -39,9 +44,12 @@ const Cart = () => {
                 <NoProd/>                
             }
 
-            <h6 className = "total">Total : {orderTotal}</h6>
+            <h6 className = "total">Total : <span>${orderTotal}</span></h6>
             
         </div>
+        {
+            cartData.length ? <Link to = '/checkout'>Check Out</Link> : ''
+        }
         <div className="continueShopping">
             <Link to = '/'>Continue Shopping</Link>
         </div>

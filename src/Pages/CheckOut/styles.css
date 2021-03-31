@@ -1,17 +1,18 @@
-.cart{
+
+.checkOut{
     margin-top: 150px;
 }
 
-.cart .heading{
+.checkOut h2{
     text-align: center;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 800;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0px 50px 0px;
 }
 
-.cart .NoProd{
+.NoProd{
     height: max-content;
     display: flex;
     flex-direction: column;
@@ -22,7 +23,7 @@
 
 
 
-.cart .NoProd h3{
+.NoProd h3{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -32,7 +33,7 @@
     margin: 20px 0px 0px 0px;
 }
 
-.cart .NoProd a{
+.NoProd a{
     padding: 14px 28px;
     background-color: #fa8164;
     color: #fff;
@@ -42,7 +43,7 @@
     margin: 20px 0px;
 }
 
-.cart .ProdCart{
+.ProdCart{
     width: 500px;
     margin: 10px auto;
     height: 120px;
@@ -54,22 +55,22 @@
 
 }
 
-.cart .ProdCart img{
+.ProdCart img{
     width: 100px;
     height: 100%;
     margin: 0px 0px 0px 10px;
 }
 
-.cart .ProdCart .details{
+.ProdCart .details{
     width: max-content;
     margin: 0px 50px;
 }
 
-.cart .ProdCart .details h3{
+.ProdCart .details h3{
     margin-bottom: 10px !important;
 }
 
-.cart .ProdCart .details h4{
+.ProdCart .details h4{
     margin: 10px 0px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -77,14 +78,14 @@
     font-size: 14px;
 }
 
-.cart .ProdCart .total{
+.ProdCart .total{
     height: 90px;
     display: flex;
     align-items: end;
     float: right;
 }
 
-.cart .ProdCart .total h3{
+.ProdCart .total h3{
     margin: 0px;
 }
 
@@ -105,7 +106,7 @@
     left: 50%; */
 }
 
-.cart .total{
+.total{
     padding: 14px 28px;
     width: max-content;
     margin: 10px auto;
@@ -113,6 +114,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.cart .total span{
+.total span{
     font-weight: 500    ;
 }
