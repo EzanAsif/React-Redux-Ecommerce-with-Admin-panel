@@ -17,9 +17,9 @@ const Cart = () => {
     const cartData = useSelector(reducer => reducer.cart)
     console.log(cartData)
 
-    const PlaceOrder = useSelector(reducer => reducer.indOrder)
+    // const PlaceOrder = useSelector(reducer => reducer.indOrder)
 
-    const dispatch = useDispatch()
+    // const dispatch = useDispatch()
 
   
 

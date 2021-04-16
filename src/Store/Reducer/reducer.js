@@ -28,19 +28,19 @@ let products = {
 let cart = [];    
 
 
-let individualOrder = {
+let individualOrder = [
 
     // orderNo : int,
-    // details : cart,
+    // orderDesc : cart,
     // status : 'string', //can either be 'completed' or 'active' ; active means not completed/delivered
     // total : int, // will map through whole array of cart and will sum all prices
     // details : []  // will be user details i.e Name, Email, Address, Cell No
 
-};
-
-let orders = [
-    // array of individual orders
 ];
+
+// let orders = [
+//     // array of individual orders
+// ];
 
 export function prodReducer(state = products, action){
     switch (action.type) {  
@@ -56,8 +56,6 @@ export function cartReducer(state = cart, action){
                 ...state,
                 action.payload,
             ]
-
-        
         default:
             return state;
     }
@@ -66,10 +64,10 @@ export function cartReducer(state = cart, action){
 export function indOrderReducer(state = individualOrder, action){
     switch (action.type) {
         case 'PLACE_ORDER':
-            return{
-                state : action.payload,
-            }
-    
+            return[
+                ...state,
+                action.payload,
+            ]
         default:
             return state
     }

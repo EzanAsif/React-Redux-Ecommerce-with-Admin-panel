@@ -1,119 +1,122 @@
-
-.checkOut{
-    margin-top: 150px;
+.checkOut {
+  margin-top: 150px;
 }
 
-.checkOut h2{
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight: 800;
-    margin: 20px 0px 50px 0px;
+.checkOut h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 20px 0px 50px 0px;
 }
 
-.NoProd{
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 30px 0px;
+.cart-total {
+  text-align: center;
+  font-size: 40px;
+  color: #fa8164;
 }
 
-
-
-.NoProd h3{
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #b6b5b5;
-    margin: 20px 0px 0px 0px;
+.NoProd {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 30px 0px;
 }
 
-.NoProd a{
-    padding: 14px 28px;
-    background-color: #fa8164;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sanserif;
-    text-decoration: none;
-    margin: 20px 0px;
+.NoProd h3 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #b6b5b5;
+  margin: 20px 0px 0px 0px;
 }
 
-.ProdCart{
-    width: 500px;
-    margin: 10px auto;
-    height: 120px;
-    /* border: 2px solid #111; */
-    display: flex;
-    padding: 20px 0px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(168, 168, 168, 0.23), 0 2px 4px 4.5px rgba(168, 168, 168, 0.23);
-
+.NoProd a {
+  padding: 14px 28px;
+  background-color: #fa8164;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat", sanserif;
+  text-decoration: none;
+  margin: 20px 0px;
 }
 
-.ProdCart img{
-    width: 100px;
-    height: 100%;
-    margin: 0px 0px 0px 10px;
+.ProdCart {
+  width: 500px;
+  margin: 10px auto;
+  height: 120px;
+  /* border: 2px solid #111; */
+  display: flex;
+  padding: 20px 0px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(168, 168, 168, 0.23),
+    0 2px 4px 4.5px rgba(168, 168, 168, 0.23);
 }
 
-.ProdCart .details{
-    width: max-content;
-    margin: 0px 50px;
+.ProdCart img {
+  width: 100px;
+  height: 100%;
+  margin: 0px 0px 0px 10px;
 }
 
-.ProdCart .details h3{
-    margin-bottom: 10px !important;
+.ProdCart .details {
+  width: max-content;
+  margin: 0px 50px;
 }
 
-.ProdCart .details h4{
-    margin: 10px 0px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    color :#505050;
-    font-size: 14px;
+.ProdCart .details h3 {
+  margin-bottom: 10px !important;
 }
 
-.ProdCart .total{
-    height: 90px;
-    display: flex;
-    align-items: end;
-    float: right;
+.ProdCart .details h4 {
+  margin: 10px 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #505050;
+  font-size: 14px;
 }
 
-.ProdCart .total h3{
-    margin: 0px;
+.ProdCart .total {
+  height: 90px;
+  display: flex;
+  align-items: end;
+  float: right;
 }
 
-.continueShopping{
-    margin: 25px auto;
-    width: max-content;
+.ProdCart .total h3 {
+  margin: 0px;
 }
 
-.continueShopping a{
-    padding: 14px 28px;
-    background-color: #fa8164;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sanserif;
-    text-decoration: none;
-    /* position: relative;
+.continueShopping {
+  margin: 25px auto;
+  width: max-content;
+}
+
+.continueShopping a {
+  padding: 14px 28px;
+  background-color: #fa8164;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat", sanserif;
+  text-decoration: none;
+  /* position: relative;
     bottom: 10%;
     left: 50%; */
 }
 
-.total{
-    padding: 14px 28px;
-    width: max-content;
-    margin: 10px auto;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+.total {
+  padding: 14px 28px;
+  width: max-content;
+  margin: 10px auto;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
-.total span{
-    font-weight: 500    ;
+.total span {
+  font-weight: 500;
 }

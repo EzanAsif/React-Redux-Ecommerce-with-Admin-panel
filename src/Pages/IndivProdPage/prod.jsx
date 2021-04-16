@@ -6,10 +6,6 @@ import { useParams, Link } from "react-router-dom";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
-import prod1 from "../../Assets/1st_prod_1.jpg";
-import prod2 from "../../Assets/1st_prod_2.jpg";
-import prod3 from "../../Assets/1st_prod_3.jpg";
-
 const Prod = ({title, price, desc, images, sizes, bestSeller}) => {
 
   const cartData  = useSelector(reducer => reducer.cart)
