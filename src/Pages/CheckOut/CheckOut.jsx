@@ -5,7 +5,7 @@ import ProdCart from "../Cart/ProdCart";
 import NoProd from "../Cart/NoProd";
 import SiteNav from "../../Components/SiteNav/SiteNav";
 import AnnounceBar from "../../Components/AnnouncementBar/AnnounceBar";
-
+import { useHistory } from "react-router-dom";
 const CheckOut = () => {
   const cartData = useSelector((reducer) => reducer.cart);
   const order = useSelector((reducer) => reducer.indOrder);
@@ -13,6 +13,8 @@ const CheckOut = () => {
   console.log(order);
 
   const dispatch = useDispatch();
+  let history = useHistory();
+
   
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -33,13 +35,22 @@ const CheckOut = () => {
       uesrInfo : {name, email, address, cell},
     }
 
-    console.log(newOrder)
+    console.table(newOrder)
 
     dispatch({
       type : "PLACE_ORDER",
       payload : newOrder
     })
 
+    dispatch({
+      type : "RESET"
+    })
+    console.log("NEW CART DATA");
+    console.log(cartData);
+
+    history.push('/')
+
+    alert("ORDER PLACED")
   }
 
   return (

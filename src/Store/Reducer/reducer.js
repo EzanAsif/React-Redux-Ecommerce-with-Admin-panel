@@ -56,6 +56,8 @@ export function cartReducer(state = cart, action){
                 ...state,
                 action.payload,
             ]
+        case 'RESET' : 
+            return( state = [])
         default:
             return state;
     }

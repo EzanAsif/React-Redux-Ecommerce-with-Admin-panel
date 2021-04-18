@@ -11,8 +11,10 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 
 function App() {
 
-  const CartData = useSelector(reducer => reducer.cart)
-  console.log(CartData)
+  const order = useSelector((reducer) => reducer.indOrder);
+  const CartData = useSelector(reducer => reducer.cart) 
+  console.log("THIS IS ORDER")
+  console.log(order);
 
   return (
       <Router>
@@ -23,6 +25,7 @@ function App() {
           {
             CartData.length ? <Route exact path = '/checkout' component = {CheckOut} /> : <h6>NO ROUTE</h6>
           }
+          <Route exact path = '/confirmedOrder' component = {Cart} />
           
         </Switch>
       </Router>

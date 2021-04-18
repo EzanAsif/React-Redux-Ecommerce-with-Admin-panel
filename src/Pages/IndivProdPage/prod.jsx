@@ -68,8 +68,8 @@ const Prod = ({title, price, desc, images, sizes, bestSeller}) => {
         </div>
         <input onChange = {(e) => {e.preventDefault(); setQty(e.target.value)}} type="number" name="qty" className = "qty" placeholder  = "Quantity" min = {1} max = {10}/>
         <div className="buttons">
-          <Link to={`/product/${title}`} onClick = {addToCart}>Add to cart</Link>
-          <Link to="/">Buy Now</Link>
+          <Link to='/cart' onClick = {addToCart}>Add to cart</Link>
+          <Link to='/cart' onClick = {addToCart} >Buy Now</Link>
         </div>
       </div>
       <div className="images">
